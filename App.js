@@ -13,7 +13,7 @@ import {
   ScrollView,
   View,
   Text,
-  StatusBar,
+  Button,
   ImageBackground,
   Image,
   TextInput,
@@ -33,6 +33,8 @@ import {
 import bgImage from './images/back.jpg'
 import logo from './images/logo.png'
 import Icon from 'react-native-vector-icons/Ionicons'
+
+import {action} from './serverTest'
 
 
 const { width: WIDTH } = Dimensions.get('window')
@@ -93,6 +95,8 @@ export default class AwesomeProject extends Component {
         <TouchableOpacity style={styles.btnLogin}>
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>
+
+        <Button title={'Dennis'} onPress={action}/>
 
       </ImageBackground>
 
